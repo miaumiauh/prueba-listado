@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+  <head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+
+  <body>
+	<table>
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Level</th>
+				<th>Teacher</th>
+			
+			</tr>
+		</thead>
+		<th:block th:each="p: ${lista}">
+			<tr>
+				<td th:text="${p.IdSubject}"></td>
+				<td th:text="${p.name}"></td>
+				<td th:text="${p.level}"></td>
+				<td th:text="${p.teacher}"></td>
+			</tr>
+			
+		
+		</th:block>
+	</table>
+		
+  
+  </body>
+
+</html>
